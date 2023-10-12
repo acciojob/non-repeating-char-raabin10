@@ -1,4 +1,4 @@
-let sentence = prompt("Enter a String")
+
 function firstNonRepeatedChar(sentence)
 	{
 		let arr = new Array(26);
