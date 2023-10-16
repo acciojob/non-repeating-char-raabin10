@@ -27,4 +27,3 @@ if (result !== null) {
 } else {
   alert("null");
 }
-a
