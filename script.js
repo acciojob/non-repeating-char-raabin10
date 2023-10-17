@@ -1,10 +1,10 @@
 function firstNonRepeatedChar(str) {
   // Create an object to store the character counts'[] 
-  const charCount = {};
-
+  let charCount = {}; 
+  
   // Iterate through the string and count the occurrences of each character
   for (let i = 0; i < str.length; i++) {
-    const char = str[i];
+    const char = str[i]; 
     charCount[char] = (charCount[char] || 0) + 1;
   }
 
