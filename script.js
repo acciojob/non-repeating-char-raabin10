@@ -7,7 +7,6 @@ function firstNonRepeatedChar(str) {
     const char = str[i]; 
     charCount[char] = (charCount[char] || 0) + 1;
   }
-
   // Iterate through the string again to find the first non-repeated character
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
