@@ -27,14 +27,3 @@ if (result !== null) {
 } else {
   alert("null");
 }
-cy.visit(baseUrl, {
-  onBeforeLoad(win) {
-    // Stub your function to simulate input with no non-repeated characters
-    cy.stub(win, "prompt").onFirstCall().returns('aabbcc');
-  }
-});
-
-cy.on("window:alert", result => {
-  // Assert that the result matches the expected behavior when there are no non-repeated characters
-  expect(result).to.equal(null);
-});
