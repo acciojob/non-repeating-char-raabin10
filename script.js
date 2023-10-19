@@ -24,5 +24,5 @@ const result = firstNonRepeatedChar(input);
 if (result !== null) {
   alert(result);
 } else {
-  alert("null");
+
 }
